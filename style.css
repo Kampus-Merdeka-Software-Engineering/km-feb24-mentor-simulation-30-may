@@ -14,13 +14,22 @@
 
 
 .dynamic-island {
-    
     background-color: white;
     border-radius: 10px;
-    width: 100px;
+    width: 140px;
     height: 20px;
-    /* width: fit-content; */
     margin-left: auto;
     margin-right: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+.dynamic-island:active {
+    transform: scale(1.1);
+}
+
+.dynamic-island.active {
+    /* background-color: red; */
+    margin-top: 20px;
+    transform: scale(2.3);
+    transition: transform 0.3s ease
 }
